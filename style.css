@@ -1,0 +1,229 @@
+/* Fuente */
+
+@import "https://fonts.googleapis.com/css?family=Press%20Start%202P";
+
+* {
+  border: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Press Start 2P";
+}
+
+h2 {
+  font-size: 1.8rem;
+}
+
+.panel__izquierdo,
+.panel__derecho {
+  font-size: 2rem;
+  background-color: whit;
+  width: 30vw;
+  text-align: center;
+  line-height: 3rem;
+}
+
+/* Efecto Hover Selección */
+a {
+  text-decoration: none;
+  color: #fff090;
+}
+
+li {
+  color: #4faf44;
+}
+
+.opcion {
+  position: relative;
+  display: block;
+  color: #f6eb14;
+  line-height: 1.5rem;
+}
+
+.opcion:hover {
+  cursor: pointer;
+  background-color: #403e3f;
+}
+/* Termina Efecto Hover */
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  color: white;
+  background-color: #3e2974;
+}
+
+.cajero {
+  border: 8px solid black;
+  width: 40rem;
+  height: 60rem;
+  border-radius: 2rem;
+  background-color: #f4d55f;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 1.5rem 1.5rem 4rem grey;
+}
+
+.cajero__pantalla-borde {
+  border: 8px solid black;
+  border-radius: 2rem;
+  background-color: #403e3f;
+  width: 88%;
+  height: 92%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.cajero__pantalla-borde2 {
+  width: 97%;
+  height: 98%;
+  background-color: #221;
+  border-radius: 1.2rem;
+}
+
+.cajero__pantalla {
+  padding: 1rem;
+  text-align: center;
+}
+
+.bienvenida {
+  line-height: 2rem;
+  margin-top: 1rem;
+}
+
+/*  FORMULARIO*/
+form {
+  margin-top: 5rem;
+  color: #fff090;
+  text-align: left;
+  font-size: 1.3rem;
+}
+
+.formulario__elementos {
+  margin-bottom: 1rem;
+}
+
+form input {
+  height: 1.5rem;
+  width: 100%;
+  margin-top: 0.5rem;
+}
+
+.formulario__boton {
+  width: 50%;
+  height: 2rem;
+  font-size: 1.2rem;
+}
+
+/* TERMINA FORMULARIO */
+
+.iconomundo {
+  font-size: 12rem;
+  position: relative;
+  top: 8rem;
+}
+
+.iconomundo p {
+  font-size: 2rem;
+  margin-top: 1.2rem;
+  color: #4faf44;
+}
+
+.errorlogin {
+  margin-top: 2rem;
+  font-size: 1.5rem;
+  color: red;
+  height: 2rem;
+  background-color: wh;
+}
+
+/* -------STYLE BANCA------ */
+.cajero__pantalla-banca {
+  height: 100%;
+  padding: 1rem;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+.cajero-opciones {
+  font-size: 1.5rem;
+  line-height: 10rem;
+  width: 100%;
+  align-items: center;
+  text-align: center;
+}
+
+.input__monto {
+  height: 3rem;
+  width: 100%;
+}
+
+.opcion {
+  line-height: 3rem;
+}
+
+/* Icono */
+
+.iconomundob {
+  font-size: 4rem;
+  position: relative;
+  top: 1rem;
+}
+
+.iconomundob p {
+  font-size: 1rem;
+  margin-top: 1.2rem;
+  color: #4faf44;
+}
+
+.banca__contenido {
+  height: 30rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+.cerrars {
+  font-size: 1rem;
+  color: red;
+  font-weight: 600;
+}
+
+.btnc {
+  background-color: red;
+  height: 2.5rem;
+  width: 8rem;
+}
+
+.welcome {
+  font-size: 1.5;
+  line-height: 2rem;
+  color: white;
+}
+
+.saldoactual {
+  display: none;
+}
+
+/* Animación Movimiento */
+
+.move {
+  animation: mymove 4s infinite;
+  position: relative;
+}
+@keyframes mymove {
+  0% {
+    top: 0rem;
+  }
+  50% {
+    top: 2rem;
+  }
+  100% {
+    top: 0rem;
+  }
+}

@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Cajero Automático</title>
+  </head>
+  <body>
+    <div class="panel__izquierdo move">
+      <h2>Cajero <br> Automático</h2>
+    </div>
+
+    <!-- INICIA CAJERO -->
+    <div class="cajero">
+      <div class="cajero__pantalla-borde">
+        <!-- Screen del cajero  -->
+        <div class="cajero__pantalla-borde2">
+          <div class="cajero__pantalla-banca">
+            <h2 class="welcome" id="welcome"></h2>
+
+            <div class="banca__contenido">
+              <div class="cajero-opciones">
+                <a class="opcion" onclick="depositar()">Depositar Dinero</a>
+
+                <a class="opcion" onclick="retirar()">Retirar Dinero</a>
+
+                <a class="opcion" onclick="mostrar()">Consultar Saldo</a>
+              </div>
+
+              <input
+                class="input__monto"
+                type="text"
+                id="monto"
+                placeholder="Ingresa el Monto"
+              />
+
+              <div class="saldoactual" id="saldoactual">
+                <p id="montoactual"></p>
+              </div>
+
+              <a class="cerrars" href="index.html">
+                <button class="btnc">Cerrar <br />Sesion</button>
+              </a>
+
+
+           
+                
+                </button>
+             
+            </div>
+
+            <!-- Logo del banco -->
+            <div class="iconomundob">
+              <i class="fa-solid fa-globe"></i>
+              <p>B.C.A</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- TERMINA CAJERO -->
+    <div class="panel__derecho move">
+      <h2>Martin <br />Quiroz</h2>
+    </div>
+
+    <!-- Script para icono -->
+    <script
+      src="https://kit.fontawesome.com/5b0881c2e7.js"
+      crossorigin="anonymous"
+    ></script>
+    <script src="banca.js"></script>
+  </body>
+</html>

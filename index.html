@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Cajero Automático</title>
+  </head>
+  <body>
+    <div class="panel__izquierdo move">
+      <h2>Cajero <br />Automático</h2>
+    </div>
+
+    <!-- INICIA CAJERO -->
+    <div class="cajero">
+      <div class="cajero__pantalla-borde">
+        <!-- Screen del cajero  -->
+        <div class="cajero__pantalla-borde2">
+          <div class="cajero__pantalla">
+            <h2 class="bienvenida">Bienvenido al Banco Central</h2>
+
+            <form class="formulario" id="formulario">
+              <label class="formulario__elementos" for="">Usuario:</label><br />
+              <input
+                class="formulario__elementos"
+                type="text"
+                id="usuario"
+              /><br />
+              <label class="formulario__elementos" for="Contraseña"
+                >Contraseña:</label
+              ><br />
+              <input
+                class="formulario__elementos"
+                type="password"
+                id="password"
+              />
+              <button class="formulario__boton" type="submit">Enviar</button>
+            </form>
+            <div class="errorlogin">
+              <p id="errorlogint"></p>
+            </div>
+
+            <div class="iconomundo">
+              <i class="fa-solid fa-globe"></i>
+              <p>B.C.A</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- TERMINA CAJERO -->
+    <div class="panel__derecho move">
+      <h2>Martin <br />Quiroz</h2>
+    </div>
+    <!-- Script para icono -->
+    <script
+      src="https://kit.fontawesome.com/5b0881c2e7.js"
+      crossorigin="anonymous"
+    ></script>
+    <!-- Script para JS -->
+    <script src="login.js"></script>
+  </body>
+</html>
